@@ -25,9 +25,9 @@ plotimage(real(xx(1:nze,1:nxe)),x,z,h);
 colormap autumn;
 ylabel('z (m)');
 % xticks(0:1000:8810);yticks(0:200:2670);xlim([-1 8810]);ylim([-1 2670]);
-xticks(0:1500:8810);yticks(0:450:2670);xlim([-1 8810]);ylim([-1 2670]);
+xticks(0:1500:8810);yticks(0:450:2670);%xlim([-1 8810]);ylim([-1 2670]);
 set(gca,'Position',[0.13 0.5838 0.6554 0.3412]);
-set(gca,'FontSize',14,'FontWeight','bold');
+set(gca,'FontSize',24,'FontWeight','bold');
 
 
 subplot(2,1,2)
@@ -35,10 +35,10 @@ x=0:nxe17-1;z=0:nze17-1;
 plotimage(real(xx17(1:nze17,1:nxe17)),x,z,h17);
 colormap autumn;
 xlabel('x (m)'); ylabel('z (m)');
-xticks(0:1500:8410);yticks(0:480:2270);xlim([-1 8410]);ylim([-1 2270]);
+xticks(0:1500:8410);yticks(0:480:2270);%xlim([-1 8410]);ylim([-1 2270]);
 % xticks(0:1000:8410);yticks(0:200:2270);xlim([-1 8410]);ylim([-1 2270]);
 set(gca,'Position',[0.147 0.2186 0.6252 0.3025]);
-set(gca,'FontSize',14,'FontWeight','bold');
+set(gca,'FontSize',24,'FontWeight','bold');
 
 
 
@@ -55,9 +55,9 @@ x=0:nxe-1;z=0:nze-1;
 plotimage(real(xx1(1:nze,1:nxe)),x,z,h);
 caxis([-2.692 5]);
 ylabel('z (m)');
-xticks(0:1500:8810);yticks(0:450:2670);xlim([-1 8810]);ylim([-1 2670]);
+xticks(0:1500:8810);yticks(0:450:2670);%xlim([-1 8810]);ylim([-1 2670]);
 set(gca,'Position',[0.13 0.5838 0.6554 0.3412]);
-set(gca,'FontSize',14,'FontWeight','bold');
+set(gca,'FontSize',24,'FontWeight','bold');
 
 
 
@@ -66,9 +66,9 @@ x=0:nxe17-1;z=0:nze17-1;
 plotimage(real(xx117(1:nze17,1:nxe17)),x,z,h17);
 caxis([-2.692 5]);
 xlabel('x (m)'); ylabel('z (m)');
-xticks(0:1500:8410);yticks(0:480:2270);xlim([-1 8410]);ylim([-1 2270]);
+xticks(0:1500:8410);yticks(0:480:2270);%xlim([-1 8410]);ylim([-1 2270]);
 set(gca,'Position',[0.147 0.2186 0.6252 0.3025]);
-set(gca,'FontSize',14,'FontWeight','bold');
+set(gca,'FontSize',24,'FontWeight','bold');
 
 
 

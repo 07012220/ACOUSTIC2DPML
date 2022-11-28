@@ -14,9 +14,6 @@ This is for plotting seismograms.
 *** /Snapshots
 This is for plotting snapshots.
 
-*** /Layer comparison
-This is for comparing the results when using different number of PML layers.
-
 *** /Parameter analysis
 This is for comparing the results when using different values of the PML parameter \beta_0.
 

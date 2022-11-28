@@ -66,7 +66,7 @@ subplot(3,2,5)
 
 plotimage(real(y_ifft9n(1:nt,:)),x_axis9,y_axis,h9);
 set(gca,'Position',[0.13 0.15 0.1773 0.2589]);
-xlabel('x (s)','FontSize', [14],'FontWeight','bold');
+xlabel('x (m)','FontSize', [14],'FontWeight','bold');
 ylabel('Time (s)','FontSize', [14],'FontWeight','bold');
 xticklabels({'0','2000','4000','6000','8000'});
 yticklabels({'0','0.4','0.8','1.2','1.6','2.0','2.4'});
@@ -76,7 +76,7 @@ subplot(3,2,6)
 
 plotimage(real(y_ifft17n(1:nt,:)),x_axis17,y_axis,h17);
 set(gca,'Position',[0.33 0.15 0.1773 0.2589]);
-xlabel('x (s)','FontSize', [14],'FontWeight','bold');
+xlabel('x (m)','FontSize', [14],'FontWeight','bold');
 xticklabels({'0','2000','4000','6000','8000'});
 yticklabels({' ',' ',' ',' ',' ',' ',' '});
 set(gca,'FontSize',14,'FontWeight','bold');
