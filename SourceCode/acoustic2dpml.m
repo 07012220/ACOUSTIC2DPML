@@ -73,7 +73,7 @@ co=2.826;
 fo=30;
 rz=1;
 
- data=load('para9_CFSPML.txt'); 
+ data=load('para17_optimizedCFSPML.txt'); 
  nx=data(1);
  nz=data(2);
  npml1=data(3);
@@ -91,7 +91,7 @@ rz=1;
  a=90;
  nxe=nx+2*npml2;  nze=nz+2*npml1; nne=nxe*nze; V(1:nz,1:nx)=0;
  
-data=load('Homo.mesh');  % Overthrust.mesh  Marmousi2.mesh
+data=load('Marmousi2.mesh');  % Homo.mesh Overthrust.mesh  Marmousi2.mesh
 for i=1:nz
     for j=1:nx
         V(i,j)=data(i,j);
@@ -103,8 +103,8 @@ v=vextpml(nz,nx,V,npml1,npml2);
 
 
 % Shot parameter seting
-% ishot1=ceil(nze/2);
-ishot1=npml1+10;ishot2=ceil(nxe/2);ishot=kkindex(ishot1,ishot2,nze);
+ ishot1=npml1+10;ishot2=ceil(nxe/2);ishot=kkindex(ishot1,ishot2,nze);
+%ishot1=ceil(nze/2);ishot2=ceil(nxe/2);ishot=kkindex(ishot1,ishot2,nze);
 
 nt=256;dt=1/fs;
 src=rickerfwt(nt,dt,fo); %nt,dt and the peak frequency
